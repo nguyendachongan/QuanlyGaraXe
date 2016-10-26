@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="QLGRXH">
+  <DataContextMoniker Name="/QLGRXHDataContext" />
+  <nestedChildShapes>
+    <classShape Id="38850642-8a54-4610-90f5-3a8b7645fbdf" absoluteBounds="3.5, 4.125, 2, 1.7708968098958322">
+      <DataClassMoniker Name="/QLGRXHDataContext/Chitiet_HD" />
+      <nestedChildShapes>
+        <elementListCompartment Id="659336c9-d641-4929-9ab3-ab757127f41f" absoluteBounds="3.515, 4.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b4e46d6c-0909-40c7-8ee9-6b2d075b74cd" absoluteBounds="5.75, 2.625, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/QLGRXHDataContext/Tho" />
+      <nestedChildShapes>
+        <elementListCompartment Id="50a0b18e-b950-49a9-9b1f-17052d19997c" absoluteBounds="5.765, 3.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="548bdbee-ca2c-4fa3-960f-6e6053b14777" absoluteBounds="0.75, 0.75, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/QLGRXHDataContext/Cong_Viec" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8cfe517c-1d82-4f1c-b216-8ed494f8dbcc" absoluteBounds="0.765, 1.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a9730e78-de4f-4948-8213-3525137d094a" absoluteBounds="0.75, 3.25, 2, 2.5401025390624996">
+      <DataClassMoniker Name="/QLGRXHDataContext/Hop_Dong" />
+      <nestedChildShapes>
+        <elementListCompartment Id="22e32ca8-b2b7-4365-9892-67064ca28513" absoluteBounds="0.765, 3.71, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fe610829-f237-4645-90be-112cfefed94d" absoluteBounds="1.875, 6.375, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/QLGRXHDataContext/Phieu_thu" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8bb254ef-4856-446e-a594-10858223fb49" absoluteBounds="1.8900000000000001, 6.835, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.75 : 3.3749995); (4.5 : 3.3749995); (4.5 : 4.125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLGRXHDataContext/Tho/Tho_Chitiet_HD" />
+      <nodes>
+        <classShapeMoniker Id="b4e46d6c-0909-40c7-8ee9-6b2d075b74cd" />
+        <classShapeMoniker Id="38850642-8a54-4610-90f5-3a8b7645fbdf" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 1.34699625651042); (3.9687475 : 1.34699625651042); (3.9687475 : 4.125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLGRXHDataContext/Cong_Viec/Cong_Viec_Chitiet_HD" />
+      <nodes>
+        <classShapeMoniker Id="548bdbee-ca2c-4fa3-960f-6e6053b14777" />
+        <classShapeMoniker Id="38850642-8a54-4610-90f5-3a8b7645fbdf" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 4.95755126953125); (3.5 : 4.95755126953125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLGRXHDataContext/Hop_Dong/Hop_Dong_Chitiet_HD" />
+      <nodes>
+        <classShapeMoniker Id="a9730e78-de4f-4948-8213-3525137d094a" />
+        <classShapeMoniker Id="38850642-8a54-4610-90f5-3a8b7645fbdf" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.3125 : 5.7901025390625); (2.3125 : 6.375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLGRXHDataContext/Hop_Dong/Hop_Dong_Phieu_thu" />
+      <nodes>
+        <classShapeMoniker Id="a9730e78-de4f-4948-8213-3525137d094a" />
+        <classShapeMoniker Id="fe610829-f237-4645-90be-112cfefed94d" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

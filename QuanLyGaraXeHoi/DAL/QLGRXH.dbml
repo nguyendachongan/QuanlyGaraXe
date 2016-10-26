@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QLGRXH" Class="QLGRXHDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-1PI8VUA\SQLEXPRESS;Initial Catalog=QLGRXH;Persist Security Info=True;User ID=sa" SettingsObjectName="DAL.Properties.Settings" SettingsPropertyName="QLGRXHConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Chitiet_HD" Member="Chitiet_HDs">
+    <Type Name="Chitiet_HD">
+      <Column Name="soHD" Type="System.String" DbType="NChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="maCV" Type="System.String" DbType="NChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="triGia_CV" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="maTho" Type="System.String" DbType="NChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="khoanTho" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Association Name="Tho_Chitiet_HD" Member="Tho" ThisKey="maTho" OtherKey="maTho" Type="Tho" IsForeignKey="true" />
+      <Association Name="Cong_Viec_Chitiet_HD" Member="Cong_Viec" ThisKey="maCV" OtherKey="MACV" Type="Cong_Viec" IsForeignKey="true" />
+      <Association Name="Hop_Dong_Chitiet_HD" Member="Hop_Dong" ThisKey="soHD" OtherKey="soHD" Type="Hop_Dong" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tho" Member="Thos">
+    <Type Name="Tho">
+      <Column Name="maTho" Type="System.String" DbType="NChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="tenTho" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="nhom" Type="System.String" DbType="NChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="nhom_Truong" Type="System.String" DbType="NChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Tho_Chitiet_HD" Member="Chitiet_HDs" ThisKey="maTho" OtherKey="maTho" Type="Chitiet_HD" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Cong_Viec" Member="Cong_Viecs">
+    <Type Name="Cong_Viec">
+      <Column Name="MACV" Type="System.String" DbType="NChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NOIDUNGCV" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Association Name="Cong_Viec_Chitiet_HD" Member="Chitiet_HDs" ThisKey="MACV" OtherKey="maCV" Type="Chitiet_HD" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Hop_Dong" Member="Hop_Dongs">
+    <Type Name="Hop_Dong">
+      <Column Name="soHD" Type="System.String" DbType="NChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="maKH" Type="System.String" DbType="NChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="tenKH" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="diaChi" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ngayHD" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="soXe" Type="System.String" DbType="NChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="triGiaHD" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="ng_Giao_DK" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ng_NgThu" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="Hop_Dong_Chitiet_HD" Member="Chitiet_HDs" ThisKey="soHD" OtherKey="soHD" Type="Chitiet_HD" />
+      <Association Name="Hop_Dong_Phieu_thu" Member="Phieu_thus" ThisKey="soHD" OtherKey="soHD" Type="Phieu_thu" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Phieu_thu" Member="Phieu_thus">
+    <Type Name="Phieu_thu">
+      <Column Name="soPH" Type="System.String" DbType="NChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ngayPH" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="soHD" Type="System.String" DbType="NChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="hoTen" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="soTienThu" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Association Name="Hop_Dong_Phieu_thu" Member="Hop_Dong" ThisKey="soHD" OtherKey="soHD" Type="Hop_Dong" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>
