@@ -1,0 +1,5 @@
+E:\QuanlyGaraXe-master\QuanLyGaraXeHoi\Entities\bin\Debug\Entities.dll
+E:\QuanlyGaraXe-master\QuanLyGaraXeHoi\Entities\bin\Debug\Entities.pdb
+E:\QuanlyGaraXe-master\QuanLyGaraXeHoi\Entities\obj\Debug\Entities.csprojResolveAssemblyReference.cache
+E:\QuanlyGaraXe-master\QuanLyGaraXeHoi\Entities\obj\Debug\Entities.dll
+E:\QuanlyGaraXe-master\QuanLyGaraXeHoi\Entities\obj\Debug\Entities.pdb

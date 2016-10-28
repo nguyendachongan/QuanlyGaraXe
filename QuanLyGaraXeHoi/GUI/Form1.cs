@@ -7,7 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Entities;
+using BLL;
 namespace GUI
 {
     public partial class Form1 : Form
@@ -20,6 +21,11 @@ namespace GUI
         private void Form_resize()
         {
 
+        }
+        ThoBLL tbll = new ThoBLL();
+        private void lbquanlytho_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
