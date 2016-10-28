@@ -1,9 +1,0 @@
-E:\QuanlyGaraXe-master\QuanLyGaraXeHoi\BLL\bin\Debug\BLL.dll
-E:\QuanlyGaraXe-master\QuanLyGaraXeHoi\BLL\bin\Debug\BLL.pdb
-E:\QuanlyGaraXe-master\QuanLyGaraXeHoi\BLL\bin\Debug\DAL.dll
-E:\QuanlyGaraXe-master\QuanLyGaraXeHoi\BLL\bin\Debug\Entities.dll
-E:\QuanlyGaraXe-master\QuanLyGaraXeHoi\BLL\bin\Debug\DAL.pdb
-E:\QuanlyGaraXe-master\QuanLyGaraXeHoi\BLL\bin\Debug\Entities.pdb
-E:\QuanlyGaraXe-master\QuanLyGaraXeHoi\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
-E:\QuanlyGaraXe-master\QuanLyGaraXeHoi\BLL\obj\Debug\BLL.dll
-E:\QuanlyGaraXe-master\QuanLyGaraXeHoi\BLL\obj\Debug\BLL.pdb
